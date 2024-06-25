@@ -1,10 +1,7 @@
 package AmigoScope
 
-class variable {
-    val a = 10
-
+fun main(args : Array<String>) {
+    println("Hello World")
+    println("How are you ?")
 }
 
-fun main(){
-    println(a)
-}
