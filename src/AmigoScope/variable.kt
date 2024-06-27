@@ -60,8 +60,16 @@ fun main(args : Array<String>) {
     println("".isEmpty());
     var msg = "$name and $age";
     println(msg)
+
+    var multiString : String = """
+    Hey,
+    How is your day going 
+""".trimIndent();//multiLine comment
+    println(multiString)
 }
 
 fun getPIValue() : Double = 3.142;
+
+
 
 
