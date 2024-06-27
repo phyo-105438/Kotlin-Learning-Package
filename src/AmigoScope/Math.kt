@@ -49,13 +49,12 @@ fun main(){
     println(ternary)
     //When (Switch In Java)
     val gender : String = "M";
-    when(gender){
-        "M" -> println("Male")
-        "F" -> println("Female")
+     val result = when(gender){
+        "M" -> ("Male")
+        "F" -> ("Female")
         else -> {
-            println("Unknown Gender")
+            ("Unknown Gender")
+        }
     }
-
-    }
-
+    println(result)
 }
