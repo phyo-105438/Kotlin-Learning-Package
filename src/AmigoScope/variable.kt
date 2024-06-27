@@ -1,5 +1,10 @@
 package AmigoScope
 
+const val PI = 3.14;// static final ( in java) SO, it is more compatible to declare outside the function
+//const val pi = getPIValue();// error
+val pi2 = getPIValue();//final
+
+
 fun main(args : Array<String>) {
     println("Hello World")
     println("How are you ?")
@@ -32,11 +37,22 @@ fun main(args : Array<String>) {
     // Var vs Val
 
     var num1 = 100;
-    val num2 = 200;
+    val num2 = 200;//Immutable Variable (Final in java)
 
     num1 = 123;
 
+    val name1 = "Jamal";// read only
+    var i = 0 ;
+    i = 2;
+    //nullable variable
+    var name3 = "Ezzie"
+    name3.uppercase();
 
+    var brand1 : String? = "Ezekiel"
+    println(brand1?.uppercase())//need to add nullable sign if you are declared as nullable
 
 }
+
+fun getPIValue() : Double = 3.142;
+
 
