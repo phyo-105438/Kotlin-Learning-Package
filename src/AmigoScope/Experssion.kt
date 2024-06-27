@@ -45,4 +45,11 @@ fun main(){
     println(list.get(3))
     println(list)
     println(list.contains("Jamas"))
+
+    //Mutable List
+    val muList  = mutableListOf("Jamila", "Jamas", "Saleh","Peter");
+    println(muList.indexOf("Jamila"));
+    println(muList.remove("Peter"))
+    muList.add(3,"Ezzie");
+    println(muList)
 }
