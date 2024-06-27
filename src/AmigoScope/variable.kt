@@ -51,6 +51,15 @@ fun main(args : Array<String>) {
     var brand1 : String? = "Ezekiel"
     println(brand1?.uppercase())//need to add nullable sign if you are declared as nullable
 
+    //Methods
+    var myName = "PhyoHEin";
+    println(myName.uppercase())
+    println(myName.lowercase())
+    println(myName[0])
+    println(myName[1])
+    println("".isEmpty());
+    var msg = "$name and $age";
+    println(msg)
 }
 
 fun getPIValue() : Double = 3.142;
