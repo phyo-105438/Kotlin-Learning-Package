@@ -29,4 +29,10 @@ fun main(){
         println(name[i])
     }
     name.forEach { println(it) }
+    //While Loop
+    var number = name.length -1;
+    while (number >= 0){
+        println("Number : $number")
+        --number
+    }
 }

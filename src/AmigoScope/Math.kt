@@ -57,4 +57,22 @@ fun main(){
         }
     }
     println(result)
+    val stringArr = arrayOfNulls<String>(5 );
+    //Do while loop
+//    do{
+//        println("Hello")
+//    }while(true)
+
+    val nums = intArrayOf(1,2,3,4,5,6,7,8);
+    for(num in nums){
+        if(num == 2) continue;
+        if(num > 6) break;
+        println(num)
+    }
+    //Breaking is not allowed in here
+//    nums.forEach {
+//        if( it == 2) break;
+//        println(it)
+//    }
+
 }
