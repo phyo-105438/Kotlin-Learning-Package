@@ -1,0 +1,4 @@
+package AmigoScope
+
+class ClassAndObject {
+}

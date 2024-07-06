@@ -5,7 +5,7 @@ import kotlin.math.*
 
 class Math {
 }
-fun main(){
+fun main() {
     val number1 = 10;
     val number2 = 3;
     println(kotlin.math.PI)
@@ -29,7 +29,7 @@ fun main(){
 
     val isAdult = true;
     val isMale = false;
-    val orderComplete : Boolean? = null;
+    val orderComplete: Boolean? = null;
     println(isAdult)
     println(isMale)
     println(orderComplete)
@@ -37,19 +37,18 @@ fun main(){
     //IF ELSE
     val n1 = 31;
     val n2 = 20;
-    if(n1<n2 || n1<=30){
+    if (n1 < n2 || n1 <= 30) {
         println(":(")
-    }
-    else{
+    } else {
         println(":)")
     }
     //Ternary Operator
-    val ternary = if (n1>n2)"n1 is greater" else "n2 is greater";
-   // String ter = (n1 < n2) ? "n1 is greater" : "n2 is greater"; In java
+    val ternary = if (n1 > n2) "n1 is greater" else "n2 is greater";
+    // String ter = (n1 < n2) ? "n1 is greater" : "n2 is greater"; In java
     println(ternary)
     //When (Switch In Java)
-    val gender : String = "M";
-     val result = when(gender){
+    val gender: String = "M";
+    val result = when (gender) {
         "M" -> ("Male")
         "F" -> ("Female")
         else -> {
@@ -57,16 +56,16 @@ fun main(){
         }
     }
     println(result)
-    val stringArr = arrayOfNulls<String>(5 );
+    val stringArr = arrayOfNulls<String>(5);
     //Do while loop
 //    do{
 //        println("Hello")
 //    }while(true)
 
-    val nums = intArrayOf(1,2,3,4,5,6,7,8);
-    for(num in nums){
-        if(num == 2) continue;
-        if(num > 6) break;
+    val nums = intArrayOf(1, 2, 3, 4, 5, 6, 7, 8);
+    for (num in nums) {
+        if (num == 2) continue;
+        if (num > 6) break;
         println(num)
     }
     //Breaking is not allowed in here
@@ -74,5 +73,12 @@ fun main(){
 //        if( it == 2) break;
 //        println(it)
 //    }
-
+//    sum(3,4){result ->
+//        println("Total is $result")
+//    }
 }
+
+//fun sum(a : Int , b : Int , total : (Int) -> Unit ){
+//  var  result = a + b;
+//    return total(result);
+//}
