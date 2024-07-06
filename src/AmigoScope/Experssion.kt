@@ -40,16 +40,20 @@ fun main(){
 
     println(arrayOfNull.contentToString())
 
-    //List
+    //List (Default Immutable List)
     val list : List<String> = listOf("Jamila", "Jamas", "Saleh","Peter");
     println(list.get(3))
     println(list)
     println(list.contains("Jamas"))
+    val (one , two , _, four) = list;
+    println("$one $two $four")
 
     //Mutable List
     val muList  = mutableListOf("Jamila", "Jamas", "Saleh","Peter");
     println(muList.indexOf("Jamila"));
     println(muList.remove("Peter"))
     muList.add(3,"Ezzie");
-    println(muList)
+    println(muList)//
+
+
 }
