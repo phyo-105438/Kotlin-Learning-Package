@@ -4,7 +4,11 @@ class ClassAndObject {
 }
 
 fun main(){
-    var tv = SmartDevice();
+    var tv = SmartDevice(
+        "Samsung QLED",
+        1000.00,
+        false
+    );
     tv.brand = "Samsung";
     tv.price = 1000.00;
     println("${tv.brand}  is ${tv.price}");
@@ -12,7 +16,11 @@ fun main(){
     tv.switchOff();
 
 
-    val phone = SmartDevice();
+    val phone = SmartDevice(
+        "Hawei",
+        300.00,
+        false
+    );
     phone.brand = "Hawei";
     phone.price = 300.00;
     println("${phone.brand} is ${phone.price}")
@@ -20,18 +28,22 @@ fun main(){
     phone.switchOff();
 }
 
-class SmartDevice {
-    var brand: String = ""
+class SmartDevice constructor(
+    brand : String,
+    price : Double,
+    isSwitchOn : Boolean
+){
+    var brand: String = brand
         get() = field;
         set(value){
             field = value.uppercase();
         }
-    var price: Double = 0.0
+    var price: Double = price
         get() = field;
         set(value){
             field = 100.0
         }
-    var isSwitchOn = false;
+    var isSwitchOn = isSwitchOn
     fun switchOn(){
         isSwitchOn = true;
         println("$brand is switching om")
