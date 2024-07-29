@@ -33,7 +33,17 @@ fun main(){
     println("$c \t \$ \n \"")//Escape Sequence
 
     //String
-    var name : String = "Ezzie"
+    var name : String = "Kotlin.android"
     println(name)
+    println(name.uppercase())
+    println(name.lowercase())
+    println(name.length)
+    println(name.substring(0, 6))
+    println(name.substringBefore("."))
+    println(name.substringAfter("."))
+
+    var res = name.split(".")
+    println(res)
+
 
 }
