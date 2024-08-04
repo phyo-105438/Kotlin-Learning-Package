@@ -18,3 +18,12 @@ fun hello(){
         println("c is odd number")
     }
 }
+
+fun paraFun(name : String , age : Int){
+    if (age > 12){
+        println("$name is adult")
+    }
+    else{
+        println("$name is younger")
+    }
+}
