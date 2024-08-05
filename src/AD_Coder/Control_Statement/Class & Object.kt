@@ -33,3 +33,4 @@ class AddNumber(var a : Int , var b : Int){//Must declare variable in
             return c
         }
 }
+
