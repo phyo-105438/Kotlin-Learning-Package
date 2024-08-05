@@ -10,6 +10,7 @@ sealed class Error( var message : String){
 }
 
 fun main(){
+    println(Error.Network().message)
     var error = listOf(Error.Network(), Error.Database(), Error.API(), Error.Unknown())
     error.forEach {
         println(it.message)
